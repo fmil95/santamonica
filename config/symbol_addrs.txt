@@ -1,5 +1,5 @@
 Release__Q33QDT4KCOM20SINGLETON_DESCRIPTOR = 0x001CEF00; // type:func
-__static_initialization_and_destruction_0 = 0x00316FF0; // type:func
+// __static_initialization_and_destruction_0 = 0x00316FF0; // type:func
 _GLOBAL_$I$D__PROJECT_RD_QDT3_5PC_FINAL_ScriptInterface_Sources_Movie_MoviePlayableABC.cppGZbaaa = 0x003170B0; // type:func
 _GLOBAL_$D$D__PROJECT_RD_QDT3_5PC_FINAL_ScriptInterface_Sources_Movie_MoviePlayableABC.cppcPdaaa = 0x003170D0; // type:func
 _$_Q33QDT4SINT9MOVIE_TOP = 0x00317108; // type:func
@@ -8,6 +8,9 @@ Reset__Q33QDT4SINT9MOVIE_TOP = 0x003171B8; // type:func
 GetMovieCI__Q33QDT4SINT9MOVIE_TOP = 0x003171C0; // type:func
 InitBinary__Q33QDT4SINT9MOVIE_TOPQ43QDT4KCOM12COMMUNICATOR7VERSION = 0x00317228; // type:func
 UpdateOnCloseBinary__Q33QDT4SINT9MOVIE_TOPPQ33QDT4SINT9MOVIE_TOP = 0x00317268; // type:func
+
+// ScriptDisplay.cpp
+
 __Q33QDT4SINT14SCRIPT_DISPLAY = 0x00317280; // type:func
 _$_Q33QDT4SINT14SCRIPT_DISPLAY = 0x003172E0; // type:func
 Suicide__Q33QDT4SINT14SCRIPT_DISPLAY = 0x00317368; // type:func
@@ -26,3 +29,6 @@ EM_SetDefaultViewportBorderTexture__Q33QDT4SINT14SCRIPT_DISPLAYPvN21 = 0x00317D3
 EM_SetSimpleShadowObject__Q33QDT4SINT14SCRIPT_DISPLAYPvN21 = 0x00317D58; // type:func
 EM_SetSimpleShadowHeight__Q33QDT4SINT14SCRIPT_DISPLAYPvN21 = 0x00317D80; // type:func
 EM_GetSimpleShadowHeight__Q33QDT4SINT14SCRIPT_DISPLAYPvN21 = 0x00317D98; // type:func
+__static_initialization_and_destruction_0 = 0x00317DB0; // type:func
+_GLOBAL_$I$D__PROJECT_RD_QDT3_5PC_FINAL_ScriptInterface_Sources_Display_ScriptDisplay.cppJsbaaa = 0x00317E68; // type:func
+_GLOBAL_$D$D__PROJECT_RD_QDT3_5PC_FINAL_ScriptInterface_Sources_Display_ScriptDisplay.cppiLcaaa = 0x00317E88; // type:func

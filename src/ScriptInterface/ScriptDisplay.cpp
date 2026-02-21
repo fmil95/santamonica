@@ -36,10 +36,8 @@ INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", EM_SetSimpleShadow
 
 INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", EM_GetSimpleShadowHeight__Q33QDT4SINT14SCRIPT_DISPLAYPvN21);
 
-INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", func_00317DB0);
+INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", __static_initialization_and_destruction_0);
 
-INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", func_00317E68);
+INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", _GLOBAL_$I$D__PROJECT_RD_QDT3_5PC_FINAL_ScriptInterface_Sources_Display_ScriptDisplay.cppJsbaaa);
 
-INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", func_00317E88);
-
-INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", func_00317EA8);
+INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", _GLOBAL_$D$D__PROJECT_RD_QDT3_5PC_FINAL_ScriptInterface_Sources_Display_ScriptDisplay.cppiLcaaa);

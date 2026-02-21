@@ -57,7 +57,7 @@ segments:
     subsegments:
       - [0x001000, asm, header_and_early_code]
       - [0x218280, cpp, ScriptInterface/ScriptDisplay] 
-      - [0x218EB0, asm, late_code]        
+      - [0x218EA8, asm, late_code]        
       - [0x2eade0, databin, vutext]
 
   - name: mfifo
