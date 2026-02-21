@@ -1,5 +1,21 @@
 #include "common.h"
 
+inline void* operator new(unsigned int, void* p) { return p; }
+inline void operator delete(void*, void*) {}
+
+namespace QDT {
+namespace SINT {
+
+class SCRIPT_DISPLAY {
+public:
+    SCRIPT_DISPLAY();
+
+    static void* EM_Construct(void* memory, void* params, void* context);
+};
+
+} // namespace M3D
+} // namespace QDT
+
 INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", __Q33QDT4SINT14SCRIPT_DISPLAY);
 
 INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", _$_Q33QDT4SINT14SCRIPT_DISPLAY);
@@ -16,7 +32,14 @@ INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", UpdateViewportList
 
 INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", COM_Init__Q33QDT4SINT14SCRIPT_DISPLAYPQ33QDT4KCOM16CLASS_DESCRIPTOR);
 
-INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", EM_Construct__Q33QDT4SINT14SCRIPT_DISPLAYPvN21);
+void* QDT::SINT::SCRIPT_DISPLAY::EM_Construct(
+    void* memory,
+    void*,
+    void*
+)
+{
+    return new (memory) SCRIPT_DISPLAY();
+}
 
 INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", EM_Destruct__Q33QDT4SINT14SCRIPT_DISPLAYPvN21);
 

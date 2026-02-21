@@ -27,7 +27,7 @@ Discarded input sections
  .gnu.attributes
                 0x00000000       0x10 obj/asm/header_and_early_code.s.o
  .reginfo       0x00000000       0x18 obj/src/ScriptInterface/ScriptDisplay.cpp.o
- .mdebug        0x00000000     0x1f64 obj/src/ScriptInterface/ScriptDisplay.cpp.o
+ .mdebug        0x00000000     0x1f18 obj/src/ScriptInterface/ScriptDisplay.cpp.o
  .reginfo       0x00000000       0x18 obj/asm/late_code.s.o
  .MIPS.abiflags
                 0x00000000       0x18 obj/asm/late_code.s.o
@@ -27445,7 +27445,6 @@ LOAD obj/asm/data/mfifo.s.o
                 0x00317558                UpdateViewportListAnim__Q33QDT4SINT14SCRIPT_DISPLAY.NON_MATCHING
                 0x003175b8                COM_Init__Q33QDT4SINT14SCRIPT_DISPLAYPQ33QDT4KCOM16CLASS_DESCRIPTOR.NON_MATCHING
                 0x003175b8                COM_Init__Q33QDT4SINT14SCRIPT_DISPLAYPQ33QDT4KCOM16CLASS_DESCRIPTOR
-                0x00317c40                EM_Construct__Q33QDT4SINT14SCRIPT_DISPLAYPvN21.NON_MATCHING
                 0x00317c40                EM_Construct__Q33QDT4SINT14SCRIPT_DISPLAYPvN21
                 0x00317c60                EM_Destruct__Q33QDT4SINT14SCRIPT_DISPLAYPvN21
                 0x00317c60                EM_Destruct__Q33QDT4SINT14SCRIPT_DISPLAYPvN21.NON_MATCHING
