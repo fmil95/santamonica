@@ -32,7 +32,7 @@ PRE_ELF_PATH = f"{OUTDIR}/{BASENAME}.elf"
 COMMON_INCLUDES = "-Iinclude -isystem include/sdk/ee -isystem include/gcc"
 
 CC_DIR = f"{TOOLS_DIR}/cc/bin"
-COMMON_COMPILE_FLAGS = f"-x c++ -B{TOOLS_DIR}/cc/lib/gcc-lib/ee/2.95.2/ -O2 -G0 -fno-exceptions"
+COMMON_COMPILE_FLAGS = f"-x c++ -B{TOOLS_DIR}/cc/lib/gcc-lib/ee/2.95.3/ -O2 -G0 -fno-exceptions"
 
 WINE = "wine"
 WINE_ENV = "WINEPREFIX=~/.wine_ps2 WINEDEBUG=-all"
