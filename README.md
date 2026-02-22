@@ -45,4 +45,6 @@ out/RUNTIME.ELF: OK
 
 ## Credits
 
+![Game Cover](https://imgur.com/KcJyVJC.png)
+
 This project used the [Sly Cooper and the Thievius Raccoonus decomp repo](https://github.com/TheOnlyZac/sly1) as template.
