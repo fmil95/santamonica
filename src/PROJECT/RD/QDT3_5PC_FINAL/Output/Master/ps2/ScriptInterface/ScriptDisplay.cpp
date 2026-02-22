@@ -1,4 +1,4 @@
-#include "common.h"
+#include "ScriptDisplay.h"
 
 INCLUDE_ASM("asm/nonmatchings/PROJECT/RD/QDT3_5PC_FINAL/Output/Master/ps2/ScriptInterface/ScriptDisplay", __Q33QDT4SINT14SCRIPT_DISPLAY);
 
@@ -16,9 +16,15 @@ INCLUDE_ASM("asm/nonmatchings/PROJECT/RD/QDT3_5PC_FINAL/Output/Master/ps2/Script
 
 INCLUDE_ASM("asm/nonmatchings/PROJECT/RD/QDT3_5PC_FINAL/Output/Master/ps2/ScriptInterface/ScriptDisplay", COM_Init__Q33QDT4SINT14SCRIPT_DISPLAYPQ33QDT4KCOM16CLASS_DESCRIPTOR);
 
-INCLUDE_ASM("asm/nonmatchings/PROJECT/RD/QDT3_5PC_FINAL/Output/Master/ps2/ScriptInterface/ScriptDisplay", EM_Construct__Q33QDT4SINT14SCRIPT_DISPLAYPvN21);
+void* QDT::SINT::SCRIPT_DISPLAY::EM_Construct(void* memory, void*, void*)
+{
+    return new (memory) SCRIPT_DISPLAY();
+}
 
-INCLUDE_ASM("asm/nonmatchings/PROJECT/RD/QDT3_5PC_FINAL/Output/Master/ps2/ScriptInterface/ScriptDisplay", EM_Destruct__Q33QDT4SINT14SCRIPT_DISPLAYPvN21);
+void QDT::SINT::SCRIPT_DISPLAY::EM_Destruct(void* memory, void*, void*)
+{
+    static_cast<SCRIPT_DISPLAY*>(memory)->~SCRIPT_DISPLAY();
+}
 
 INCLUDE_ASM("asm/nonmatchings/PROJECT/RD/QDT3_5PC_FINAL/Output/Master/ps2/ScriptInterface/ScriptDisplay", EM_SetViewportList__Q33QDT4SINT14SCRIPT_DISPLAYPvN21);
 
@@ -32,7 +38,10 @@ INCLUDE_ASM("asm/nonmatchings/PROJECT/RD/QDT3_5PC_FINAL/Output/Master/ps2/Script
 
 INCLUDE_ASM("asm/nonmatchings/PROJECT/RD/QDT3_5PC_FINAL/Output/Master/ps2/ScriptInterface/ScriptDisplay", EM_SetSimpleShadowObject__Q33QDT4SINT14SCRIPT_DISPLAYPvN21);
 
-INCLUDE_ASM("asm/nonmatchings/PROJECT/RD/QDT3_5PC_FINAL/Output/Master/ps2/ScriptInterface/ScriptDisplay", EM_SetSimpleShadowHeight__Q33QDT4SINT14SCRIPT_DISPLAYPvN21);
+void QDT::SINT::SCRIPT_DISPLAY::EM_SetSimpleShadowHeight(void* memory, void* params, void* context) 
+{
+    D_004A87DC->shadowHeight = *(float*)context;
+}
 
 INCLUDE_ASM("asm/nonmatchings/PROJECT/RD/QDT3_5PC_FINAL/Output/Master/ps2/ScriptInterface/ScriptDisplay", EM_GetSimpleShadowHeight__Q33QDT4SINT14SCRIPT_DISPLAYPvN21);
 
