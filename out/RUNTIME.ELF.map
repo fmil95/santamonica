@@ -27,7 +27,7 @@ Discarded input sections
  .gnu.attributes
                 0x00000000       0x10 obj/asm/header_and_early_code.s.o
  .reginfo       0x00000000       0x18 obj/src/ScriptInterface/ScriptDisplay.cpp.o
- .mdebug        0x00000000     0x1ed0 obj/src/ScriptInterface/ScriptDisplay.cpp.o
+ .mdebug        0x00000000     0x1e78 obj/src/ScriptInterface/ScriptDisplay.cpp.o
  .reginfo       0x00000000       0x18 obj/asm/late_code.s.o
  .MIPS.abiflags
                 0x00000000       0x18 obj/asm/late_code.s.o
@@ -27460,7 +27460,6 @@ LOAD obj/asm/data/mfifo.s.o
                 0x00317d58                EM_SetSimpleShadowObject__Q33QDT4SINT14SCRIPT_DISPLAYPvN21.NON_MATCHING
                 0x00317d58                EM_SetSimpleShadowObject__Q33QDT4SINT14SCRIPT_DISPLAYPvN21
                 0x00317d80                EM_SetSimpleShadowHeight__Q33QDT4SINT14SCRIPT_DISPLAYPvN21
-                0x00317d80                EM_SetSimpleShadowHeight__Q33QDT4SINT14SCRIPT_DISPLAYPvN21.NON_MATCHING
                 0x00317d98                EM_GetSimpleShadowHeight__Q33QDT4SINT14SCRIPT_DISPLAYPvN21.NON_MATCHING
                 0x00317d98                EM_GetSimpleShadowHeight__Q33QDT4SINT14SCRIPT_DISPLAYPvN21
                 0x00317db0                __static_initialization_and_destruction_0.NON_MATCHING

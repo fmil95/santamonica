@@ -15,9 +15,18 @@ namespace QDT
 
             static void* EM_Construct(void* memory, void* params, void* context);
             static void EM_Destruct(void* memory, void* params, void* context); 
+            static void EM_SetSimpleShadowHeight(void* memory, void* params, void* context);
         };
     } 
 } 
+
+struct ShadowManager
+{
+    unsigned char pad[12];    
+    float shadowHeight;   
+};
+
+extern ShadowManager* D_004A87DC;
 
 INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", __Q33QDT4SINT14SCRIPT_DISPLAY);
 
@@ -57,7 +66,10 @@ INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", EM_SetDefaultViewp
 
 INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", EM_SetSimpleShadowObject__Q33QDT4SINT14SCRIPT_DISPLAYPvN21);
 
-INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", EM_SetSimpleShadowHeight__Q33QDT4SINT14SCRIPT_DISPLAYPvN21);
+void QDT::SINT::SCRIPT_DISPLAY::EM_SetSimpleShadowHeight(void* memory, void* params, void* context) 
+{
+    D_004A87DC->shadowHeight = *(float*)context;
+}
 
 INCLUDE_ASM("asm/nonmatchings/ScriptInterface/ScriptDisplay", EM_GetSimpleShadowHeight__Q33QDT4SINT14SCRIPT_DISPLAYPvN21);
 
